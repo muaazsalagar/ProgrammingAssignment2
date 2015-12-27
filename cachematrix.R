@@ -4,6 +4,10 @@
 ## Write a short comment describing this function
 ## cache Matrix is matrix stored in other environment
 
+
+## given solve(X) function returns the inverse of the matrix
+## m is vector which is cacheMatrixVector
+
 makeCacheMatrix <- function(x = matrix()) {
 m <- NULL
       set <- function(y) {
@@ -11,7 +15,7 @@ m <- NULL
               m <<- NULL
       }
       get <- function() x
-      setInverse <- function(mean) m <<- mean
+      setInverse <- function(solve) m <<- solve
       getInverse <- function() m
       list(set = set, get = get,
            setInverse = setInverse,
