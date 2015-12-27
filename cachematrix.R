@@ -2,6 +2,7 @@
 ## functions do
 
 ## Write a short comment describing this function
+## cache Matrix is matrix stored in other environment
 
 makeCacheMatrix <- function(x = matrix()) {
 
